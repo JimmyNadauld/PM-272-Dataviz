@@ -15,4 +15,6 @@ health_data <- NHANES %>% select(BMI,Age,Gender,TotChol)
 #create a histogram of BMI using ggplot
 
 ggplot(health_data, aes(x = BMI))+
-  geom_histogram(binwidth = 1)
+  geom_histogram(binwidth = 1, fill = "skyblue", colour = "black")
+labs(title = "mean height in Wales is higher than European Average")+
+  theme_minimal()
