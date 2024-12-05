@@ -18,3 +18,7 @@ ggplot(health_data, aes(x = BMI))+
   geom_histogram(binwidth = 1, fill = "skyblue", colour = "black")
 labs(title = "mean height in Wales is higher than European Average")+
   theme_minimal()
+
+#create correlation plot
+
+cor(health_data, use = "complete.obs")
